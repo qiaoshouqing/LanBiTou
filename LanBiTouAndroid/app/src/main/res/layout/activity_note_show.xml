@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title_bar"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/notebook"/>
+        <Spinner
+            android:id="@+id/select_notebook_sp"
+            android:layout_width = "match_parent"
+            android:layout_height ="40dp"
+            android:layout_marginTop="8dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="?android:attr/listDivider" />
+
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:minLines="6"
+        android:hint="要不要写一首诗呢？"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:textSize="17sp"
+        android:lineSpacingExtra="5sp"/>
+
+</LinearLayout>

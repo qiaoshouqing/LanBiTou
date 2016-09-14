@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar1"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_my">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="80dp"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:text="@string/email" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/about_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/about"
+        android:textColor="#000000"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/logout_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/logout"
+        android:textColor="#000000"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="?android:attr/listDivider" />
+
+
+
+
+
+</LinearLayout>
